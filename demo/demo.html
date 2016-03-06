@@ -1,0 +1,58 @@
+<!--
+* Data Binding allows us to seamlessly connect our front end with our JavaScript.
+* $scope is a data store object.
+* ng-model and {{}} to bind and output
+* ng-bind
+* Binding an Attribute: <h1 style="color:{{test}}">gfds</h1>
+* input type="number"
+* input type="color"
+ -->
+
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title></title>
+    <script src="angular.js"></script>
+  </head>
+  <body style="color: {{zeppelinColor}}">
+
+    <input ng-model="zeppelin" />
+    <p title="{{zeppelin}}">The name is: {{zeppelin}}</p>
+
+    <input type="number" ng-model="zeppelinDesignation" />
+    <p>The designation is: {{zeppelinDesignation + zeppelinDesignation}}</p>
+
+    <input type="email" ng-model="zeppelinEmail" />
+    <p>The email is: {{zeppelinEmail}}</p>
+
+    <input type="color" ng-model="zeppelinColor" />
+    <p>The color is: {{zeppelinColor}}</p>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- Initial State -->
+
+<!--
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title></title>
+    <script src="angular.js"></script>
+  </head>
+  <body>
+
+    <input />
+
+  </body>
+</html>
+-->
